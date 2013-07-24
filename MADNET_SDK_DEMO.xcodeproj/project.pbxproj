@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC169E86179ED23B001824C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169E85179ED23B001824C7 /* UIKit.framework */; };
+		EC169E88179ED23B001824C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169E87179ED23B001824C7 /* Foundation.framework */; };
+		EC169E8A179ED23B001824C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169E89179ED23B001824C7 /* CoreGraphics.framework */; };
+		EC169E90179ED23B001824C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC169E8E179ED23B001824C7 /* InfoPlist.strings */; };
+		EC169E92179ED23B001824C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC169E91179ED23B001824C7 /* main.m */; };
+		EC169E96179ED23B001824C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC169E95179ED23B001824C7 /* AppDelegate.m */; };
+		EC169E98179ED23B001824C7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC169E97179ED23B001824C7 /* Default.png */; };
+		EC169E9A179ED23B001824C7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC169E99179ED23B001824C7 /* Default@2x.png */; };
+		EC169E9C179ED23B001824C7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC169E9B179ED23B001824C7 /* Default-568h@2x.png */; };
+		EC169E9F179ED23B001824C7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC169E9D179ED23B001824C7 /* MainStoryboard.storyboard */; };
+		EC169EA2179ED23B001824C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC169EA1179ED23B001824C7 /* ViewController.m */; };
+		EC169EAA179ED5CC001824C7 /* CSimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC169EA9179ED5CC001824C7 /* CSimpleViewController.m */; };
+		EC169EAD179ED5FE001824C7 /* CTableADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC169EAC179ED5FE001824C7 /* CTableADViewController.m */; };
+		EC169ED1179ED99A001824C7 /* libMADSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EC7179ED99A001824C7 /* libMADSDK.a */; };
+		EC169ED2179ED99A001824C7 /* ORMMA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EC169ED0179ED99A001824C7 /* ORMMA.bundle */; };
+		EC169ED4179EDC1F001824C7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169ED3179EDC1F001824C7 /* CoreFoundation.framework */; };
+		EC169ED6179EDC25001824C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169ED5179EDC25001824C7 /* QuartzCore.framework */; };
+		EC169ED8179EDC2E001824C7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169ED7179EDC2E001824C7 /* libz.dylib */; };
+		EC169EDA179EDC37001824C7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169ED9179EDC36001824C7 /* MediaPlayer.framework */; };
+		EC169EDC179EDC45001824C7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EDB179EDC44001824C7 /* CoreLocation.framework */; };
+		EC169EDE179EDC4C001824C7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EDD179EDC4B001824C7 /* CoreMotion.framework */; };
+		EC169EE0179EDC52001824C7 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EDF179EDC52001824C7 /* EventKit.framework */; };
+		EC169EE2179EDC57001824C7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EE1179EDC57001824C7 /* CFNetwork.framework */; };
+		EC169EE4179EDC5D001824C7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EE3179EDC5C001824C7 /* CoreTelephony.framework */; };
+		EC169EE6179EDCEC001824C7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EE5179EDCEC001824C7 /* AdSupport.framework */; };
+		EC169EE8179EDCF6001824C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EE7179EDCF6001824C7 /* SystemConfiguration.framework */; };
+		EC169EEA179EDCFC001824C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EE9179EDCFC001824C7 /* MobileCoreServices.framework */; };
+		ECA164EB179FE73700DB2552 /* MADTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA164EA179FE3FD00DB2552 /* MADTableViewCell.m */; };
+		ECA164EE179FEF1900DB2552 /* CTableFloatingADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA164ED179FEF1900DB2552 /* CTableFloatingADViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC169E82179ED23B001824C7 /* MADNET_SDK_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADNET_SDK_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC169E85179ED23B001824C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC169E87179ED23B001824C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC169E89179ED23B001824C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC169E8D179ED23B001824C7 /* MADNET_SDK_DEMO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MADNET_SDK_DEMO-Info.plist"; sourceTree = "<group>"; };
+		EC169E8F179ED23B001824C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC169E91179ED23B001824C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC169E93179ED23B001824C7 /* MADNET_SDK_DEMO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MADNET_SDK_DEMO-Prefix.pch"; sourceTree = "<group>"; };
+		EC169E94179ED23B001824C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC169E95179ED23B001824C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC169E97179ED23B001824C7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EC169E99179ED23B001824C7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EC169E9B179ED23B001824C7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EC169E9E179ED23B001824C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EC169EA0179ED23B001824C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC169EA1179ED23B001824C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC169EA8179ED5CC001824C7 /* CSimpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSimpleViewController.h; sourceTree = "<group>"; };
+		EC169EA9179ED5CC001824C7 /* CSimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSimpleViewController.m; sourceTree = "<group>"; };
+		EC169EAB179ED5FE001824C7 /* CTableADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTableADViewController.h; sourceTree = "<group>"; };
+		EC169EAC179ED5FE001824C7 /* CTableADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTableADViewController.m; sourceTree = "<group>"; };
+		EC169EC3179ED99A001824C7 /* IMADBaseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADBaseProtocol.h; sourceTree = "<group>"; };
+		EC169EC4179ED99A001824C7 /* IMADFulscreenViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADFulscreenViewControllerDelegate.h; sourceTree = "<group>"; };
+		EC169EC5179ED99A001824C7 /* IMADRotationViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADRotationViewDelegate.h; sourceTree = "<group>"; };
+		EC169EC6179ED99A001824C7 /* IMADTosterRotationViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADTosterRotationViewDelegate.h; sourceTree = "<group>"; };
+		EC169EC7179ED99A001824C7 /* libMADSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMADSDK.a; sourceTree = "<group>"; };
+		EC169EC8179ED99A001824C7 /* MADBaseRequestParametrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADBaseRequestParametrs.h; sourceTree = "<group>"; };
+		EC169EC9179ED99A001824C7 /* MADExternalValuesForTargeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADExternalValuesForTargeting.h; sourceTree = "<group>"; };
+		EC169ECA179ED99A001824C7 /* MADFullscreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADFullscreenViewController.h; sourceTree = "<group>"; };
+		EC169ECB179ED99A001824C7 /* MadNetStyleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MadNetStyleConfig.h; sourceTree = "<group>"; };
+		EC169ECC179ED99A001824C7 /* MADRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADRotationView.h; sourceTree = "<group>"; };
+		EC169ECD179ED99A001824C7 /* MADSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADSize.h; sourceTree = "<group>"; };
+		EC169ECE179ED99A001824C7 /* MADTosterFooterRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADTosterFooterRotationView.h; sourceTree = "<group>"; };
+		EC169ECF179ED99A001824C7 /* MADTosterRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADTosterRotationView.h; sourceTree = "<group>"; };
+		EC169ED0179ED99A001824C7 /* ORMMA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ORMMA.bundle; sourceTree = "<group>"; };
+		EC169ED3179EDC1F001824C7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EC169ED5179EDC25001824C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EC169ED7179EDC2E001824C7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EC169ED9179EDC36001824C7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EC169EDB179EDC44001824C7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC169EDD179EDC4B001824C7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		EC169EDF179EDC52001824C7 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		EC169EE1179EDC57001824C7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EC169EE3179EDC5C001824C7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EC169EE5179EDCEC001824C7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EC169EE7179EDCF6001824C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC169EE9179EDCFC001824C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		ECA164E9179FE3FD00DB2552 /* MADTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADTableViewCell.h; sourceTree = "<group>"; };
+		ECA164EA179FE3FD00DB2552 /* MADTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADTableViewCell.m; sourceTree = "<group>"; };
+		ECA164EC179FEF1900DB2552 /* CTableFloatingADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTableFloatingADViewController.h; sourceTree = "<group>"; };
+		ECA164ED179FEF1900DB2552 /* CTableFloatingADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTableFloatingADViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC169E7F179ED23B001824C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC169EEA179EDCFC001824C7 /* MobileCoreServices.framework in Frameworks */,
+				EC169EE8179EDCF6001824C7 /* SystemConfiguration.framework in Frameworks */,
+				EC169EE6179EDCEC001824C7 /* AdSupport.framework in Frameworks */,
+				EC169EE4179EDC5D001824C7 /* CoreTelephony.framework in Frameworks */,
+				EC169EE2179EDC57001824C7 /* CFNetwork.framework in Frameworks */,
+				EC169EE0179EDC52001824C7 /* EventKit.framework in Frameworks */,
+				EC169EDE179EDC4C001824C7 /* CoreMotion.framework in Frameworks */,
+				EC169EDC179EDC45001824C7 /* CoreLocation.framework in Frameworks */,
+				EC169ED4179EDC1F001824C7 /* CoreFoundation.framework in Frameworks */,
+				EC169EDA179EDC37001824C7 /* MediaPlayer.framework in Frameworks */,
+				EC169ED8179EDC2E001824C7 /* libz.dylib in Frameworks */,
+				EC169ED6179EDC25001824C7 /* QuartzCore.framework in Frameworks */,
+				EC169E86179ED23B001824C7 /* UIKit.framework in Frameworks */,
+				EC169E88179ED23B001824C7 /* Foundation.framework in Frameworks */,
+				EC169E8A179ED23B001824C7 /* CoreGraphics.framework in Frameworks */,
+				EC169ED1179ED99A001824C7 /* libMADSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC169E79179ED23B001824C7 = {
+			isa = PBXGroup;
+			children = (
+				EC169E8B179ED23B001824C7 /* MADNET_SDK_DEMO */,
+				EC169E84179ED23B001824C7 /* Frameworks */,
+				EC169E83179ED23B001824C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC169E83179ED23B001824C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC169E82179ED23B001824C7 /* MADNET_SDK_DEMO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC169E84179ED23B001824C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC169EE9179EDCFC001824C7 /* MobileCoreServices.framework */,
+				EC169EE7179EDCF6001824C7 /* SystemConfiguration.framework */,
+				EC169EE5179EDCEC001824C7 /* AdSupport.framework */,
+				EC169EE3179EDC5C001824C7 /* CoreTelephony.framework */,
+				EC169EE1179EDC57001824C7 /* CFNetwork.framework */,
+				EC169EDF179EDC52001824C7 /* EventKit.framework */,
+				EC169EDD179EDC4B001824C7 /* CoreMotion.framework */,
+				EC169EDB179EDC44001824C7 /* CoreLocation.framework */,
+				EC169ED9179EDC36001824C7 /* MediaPlayer.framework */,
+				EC169ED7179EDC2E001824C7 /* libz.dylib */,
+				EC169ED5179EDC25001824C7 /* QuartzCore.framework */,
+				EC169ED3179EDC1F001824C7 /* CoreFoundation.framework */,
+				EC169E85179ED23B001824C7 /* UIKit.framework */,
+				EC169E87179ED23B001824C7 /* Foundation.framework */,
+				EC169E89179ED23B001824C7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC169E8B179ED23B001824C7 /* MADNET_SDK_DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				EC169EC2179ED999001824C7 /* MADNET_SDK_LIB */,
+				EC169E94179ED23B001824C7 /* AppDelegate.h */,
+				EC169E95179ED23B001824C7 /* AppDelegate.m */,
+				EC169E9D179ED23B001824C7 /* MainStoryboard.storyboard */,
+				EC169EA0179ED23B001824C7 /* ViewController.h */,
+				EC169EA1179ED23B001824C7 /* ViewController.m */,
+				EC169E8C179ED23B001824C7 /* Supporting Files */,
+				EC169EA8179ED5CC001824C7 /* CSimpleViewController.h */,
+				EC169EA9179ED5CC001824C7 /* CSimpleViewController.m */,
+				EC169EAB179ED5FE001824C7 /* CTableADViewController.h */,
+				EC169EAC179ED5FE001824C7 /* CTableADViewController.m */,
+				ECA164E9179FE3FD00DB2552 /* MADTableViewCell.h */,
+				ECA164EA179FE3FD00DB2552 /* MADTableViewCell.m */,
+				ECA164EC179FEF1900DB2552 /* CTableFloatingADViewController.h */,
+				ECA164ED179FEF1900DB2552 /* CTableFloatingADViewController.m */,
+			);
+			path = MADNET_SDK_DEMO;
+			sourceTree = "<group>";
+		};
+		EC169E8C179ED23B001824C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC169E8D179ED23B001824C7 /* MADNET_SDK_DEMO-Info.plist */,
+				EC169E8E179ED23B001824C7 /* InfoPlist.strings */,
+				EC169E91179ED23B001824C7 /* main.m */,
+				EC169E93179ED23B001824C7 /* MADNET_SDK_DEMO-Prefix.pch */,
+				EC169E97179ED23B001824C7 /* Default.png */,
+				EC169E99179ED23B001824C7 /* Default@2x.png */,
+				EC169E9B179ED23B001824C7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC169EC2179ED999001824C7 /* MADNET_SDK_LIB */ = {
+			isa = PBXGroup;
+			children = (
+				EC169EC3179ED99A001824C7 /* IMADBaseProtocol.h */,
+				EC169EC4179ED99A001824C7 /* IMADFulscreenViewControllerDelegate.h */,
+				EC169EC5179ED99A001824C7 /* IMADRotationViewDelegate.h */,
+				EC169EC6179ED99A001824C7 /* IMADTosterRotationViewDelegate.h */,
+				EC169EC7179ED99A001824C7 /* libMADSDK.a */,
+				EC169EC8179ED99A001824C7 /* MADBaseRequestParametrs.h */,
+				EC169EC9179ED99A001824C7 /* MADExternalValuesForTargeting.h */,
+				EC169ECA179ED99A001824C7 /* MADFullscreenViewController.h */,
+				EC169ECB179ED99A001824C7 /* MadNetStyleConfig.h */,
+				EC169ECC179ED99A001824C7 /* MADRotationView.h */,
+				EC169ECD179ED99A001824C7 /* MADSize.h */,
+				EC169ECE179ED99A001824C7 /* MADTosterFooterRotationView.h */,
+				EC169ECF179ED99A001824C7 /* MADTosterRotationView.h */,
+				EC169ED0179ED99A001824C7 /* ORMMA.bundle */,
+			);
+			path = MADNET_SDK_LIB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC169E81179ED23B001824C7 /* MADNET_SDK_DEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC169EA5179ED23B001824C7 /* Build configuration list for PBXNativeTarget "MADNET_SDK_DEMO" */;
+			buildPhases = (
+				EC169E7E179ED23B001824C7 /* Sources */,
+				EC169E7F179ED23B001824C7 /* Frameworks */,
+				EC169E80179ED23B001824C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MADNET_SDK_DEMO;
+			productName = MADNET_SDK_DEMO;
+			productReference = EC169E82179ED23B001824C7 /* MADNET_SDK_DEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC169E7A179ED23B001824C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = AndreyIvanov;
+			};
+			buildConfigurationList = EC169E7D179ED23B001824C7 /* Build configuration list for PBXProject "MADNET_SDK_DEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC169E79179ED23B001824C7;
+			productRefGroup = EC169E83179ED23B001824C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC169E81179ED23B001824C7 /* MADNET_SDK_DEMO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC169E80179ED23B001824C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC169E90179ED23B001824C7 /* InfoPlist.strings in Resources */,
+				EC169E98179ED23B001824C7 /* Default.png in Resources */,
+				EC169E9A179ED23B001824C7 /* Default@2x.png in Resources */,
+				EC169E9C179ED23B001824C7 /* Default-568h@2x.png in Resources */,
+				EC169E9F179ED23B001824C7 /* MainStoryboard.storyboard in Resources */,
+				EC169ED2179ED99A001824C7 /* ORMMA.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC169E7E179ED23B001824C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC169E92179ED23B001824C7 /* main.m in Sources */,
+				EC169E96179ED23B001824C7 /* AppDelegate.m in Sources */,
+				EC169EA2179ED23B001824C7 /* ViewController.m in Sources */,
+				EC169EAA179ED5CC001824C7 /* CSimpleViewController.m in Sources */,
+				EC169EAD179ED5FE001824C7 /* CTableADViewController.m in Sources */,
+				ECA164EB179FE73700DB2552 /* MADTableViewCell.m in Sources */,
+				ECA164EE179FEF1900DB2552 /* CTableFloatingADViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC169E8E179ED23B001824C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC169E8F179ED23B001824C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC169E9D179ED23B001824C7 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC169E9E179ED23B001824C7 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC169EA3179ED23B001824C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC169EA4179ED23B001824C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC169EA6179ED23B001824C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MADNET_SDK_DEMO/MADNET_SDK_DEMO-Prefix.pch";
+				INFOPLIST_FILE = "MADNET_SDK_DEMO/MADNET_SDK_DEMO-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MADNET_SDK_DEMO/MADNET_SDK\"",
+					"\"$(SRCROOT)/MADNET_SDK_DEMO/MADNET_SDK_LIB\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_TEST_FLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC169EA7179ED23B001824C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MADNET_SDK_DEMO/MADNET_SDK_DEMO-Prefix.pch";
+				INFOPLIST_FILE = "MADNET_SDK_DEMO/MADNET_SDK_DEMO-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MADNET_SDK_DEMO/MADNET_SDK\"",
+					"\"$(SRCROOT)/MADNET_SDK_DEMO/MADNET_SDK_LIB\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_TEST_FLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC169E7D179ED23B001824C7 /* Build configuration list for PBXProject "MADNET_SDK_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC169EA3179ED23B001824C7 /* Debug */,
+				EC169EA4179ED23B001824C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC169EA5179ED23B001824C7 /* Build configuration list for PBXNativeTarget "MADNET_SDK_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC169EA6179ED23B001824C7 /* Debug */,
+				EC169EA7179ED23B001824C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC169E7A179ED23B001824C7 /* Project object */;
+}

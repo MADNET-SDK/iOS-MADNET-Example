@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MADNET_SDK_DEMO/CSimpleViewController.m"
+         timestampString = "396287315.9363"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "18"
+         endingLineNumber = "18"
+         landmarkName = "@interface CSimpleViewController()"
+         landmarkType = "2">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MADNET_SDK_DEMO/CSimpleViewController.m"
+         timestampString = "396288005.128789"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MADNET_SDK_DEMO/ViewController.m"
+         timestampString = "396340263.757139"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "19"
+         endingLineNumber = "19"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MADNET_SDK_DEMO/ViewController.m"
+         timestampString = "396340264.70923"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
+         landmarkName = "-didReceiveMemoryWarning"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MADNET_SDK_DEMO/MADTableViewCell.m"
+         timestampString = "396355444.383184"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "26"
+         endingLineNumber = "26"
+         landmarkName = "-initWithCoder:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MADNET_SDK_DEMO/CTableFloatingADViewController.m"
+         timestampString = "396358005.613428"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "89"
+         endingLineNumber = "89"
+         landmarkName = "-tableView:viewForFooterInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+   </FileBreakpoints>
+</Bucket>
