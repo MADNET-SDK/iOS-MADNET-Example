@@ -10,5 +10,6 @@
 
 @interface ViewController : UIViewController
 
--(IBAction) openMADNETWebSite: (id)sender;
+-(IBAction) openMADNETWebSite: (id) sender;
+-(IBAction) loadFullscreenAd: (id) sender;
 @end

@@ -7,9 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MADFullscreenViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<IMADFulscreenViewControllerDelegate>
+{
+    MADFullscreenViewController *_fullscreenAd;
+}
 @end
 
 @implementation ViewController
@@ -18,6 +21,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    _fullscreenAd = [[MADFullscreenViewController alloc] initWithSpaceId: @"150"
+                                                               partnerId: nil];
+    _fullscreenAd.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,9 +53,24 @@
 	return UIInterfaceOrientationPortrait;
 }
 
+-(IBAction) loadFullscreenAd: (id) sender
+{
+    [_fullscreenAd load];
+}
+
+- (void) fullscreenMADViewController: (MADFullscreenViewController *) aMADViewController didFailToReceiveAdWithError: (NSError *) aError
+{
+    NSLog(@"%@",aError);
+}
+
 -(IBAction) openMADNETWebSite: (id)sender
 {
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString:@"http://www.madnet.ru"]];
 }
 
+-(void) dealloc
+{
+    [_fullscreenAd invalidate]; [_fullscreenAd release];
+    [super dealloc];
+}
 @end

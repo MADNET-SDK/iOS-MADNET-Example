@@ -370,6 +370,8 @@
 		EC169EA6179ED23B001824C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MADNET_SDK_DEMO/MADNET_SDK_DEMO-Prefix.pch";
 				INFOPLIST_FILE = "MADNET_SDK_DEMO/MADNET_SDK_DEMO-Info.plist";
@@ -389,6 +391,8 @@
 		EC169EA7179ED23B001824C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MADNET_SDK_DEMO/MADNET_SDK_DEMO-Prefix.pch";
 				INFOPLIST_FILE = "MADNET_SDK_DEMO/MADNET_SDK_DEMO-Info.plist";
