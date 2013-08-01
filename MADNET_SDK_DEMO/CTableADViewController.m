@@ -12,6 +12,7 @@
 @interface CTableADViewController ()<IMADRotationViewDelegate>
 {
     NSUInteger _adstep;
+    NSMutableArray *_madnetcells;
 }
 @end
 
@@ -31,6 +32,7 @@
     [super viewDidLoad];
     
     _adstep = 5;
+    _madnetcells = [[NSMutableArray alloc] init];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -94,6 +96,8 @@
     {
         static NSString *kMADNETCellIdentifier = @"kMADNETCellIdentifier";
         cell = [tableView dequeueReusableCellWithIdentifier: kMADNETCellIdentifier];
+        if (![_madnetcells containsObject: cell]) [_madnetcells addObject: cell];
+        
     }
     else
     {
@@ -108,6 +112,22 @@
 - (UIViewController *) MADViewController
 {
     return (self);
+}
+
+- (void) invalidate
+{
+    for (MADTableViewCell *madnetcell in _madnetcells)
+    {
+        [madnetcell invalidate];
+    }
+    [_madnetcells removeAllObjects];
+}
+
+- (void) dealloc
+{
+    [self invalidate];
+    [_madnetcells release];
+    [super dealloc];
 }
 
 @end

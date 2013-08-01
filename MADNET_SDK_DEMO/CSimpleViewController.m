@@ -54,7 +54,16 @@
     [super viewDidLoad];
     
 	// Do any additional setup after loading the view.
-    [_madnetView load];
+    
+    MADExternalValuesForTargeting *values = [[MADExternalValuesForTargeting alloc] init];
+    [values setValue: [CmAdTargetParameters params].gender.male];
+    [values setValue: [CmAdTargetParameters params].education.university];
+    [values setValue: [CmAdTargetParameters params].income.from15to24];
+    
+    values.dob = [NSDate date];
+    values.age = [NSNumber numberWithUnsignedInt: 0];
+    
+    [_madnetView loadWithExternalValues: values];
 }
 
 - (void)didReceiveMemoryWarning

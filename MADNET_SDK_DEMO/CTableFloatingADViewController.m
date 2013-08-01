@@ -206,4 +206,10 @@
      */
 }
 
+- (void) dealloc
+{
+    [_tosterAdView invalidate]; [_tosterAdView release]; _tosterAdView = nil;
+    [super dealloc];
+}
+
 @end
