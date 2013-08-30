@@ -38,7 +38,7 @@
     [super loadView];
     
     _madnetView = [[MADRotationView alloc] initWithAdSize: kmAdSize_320x50
-                                                  spaceId: @"2" // !Replace @"2" with your ad-placemenet id! 
+                                                  spaceId: @"SPACE_ID" // !Replace with your ad-placemenet id! 
                                                 partnerId: nil];
     
     _madnetView.origin = CGPointMake(0.0f, 40.0f);

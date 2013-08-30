@@ -37,7 +37,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     _tosterAdView = [[MADTosterRotationView alloc] initWithAdSize: kmAdSize_320x50
-                                                           spaceId: @"2"
+                                                           spaceId: @"SPACE_ID"
                                                          partnerId: nil];
     _tosterAdView.useTosterCloseButton = YES;
     
