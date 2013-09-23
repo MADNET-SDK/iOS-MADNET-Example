@@ -29,6 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    }
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -37,7 +42,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     _tosterAdView = [[MADTosterRotationView alloc] initWithAdSize: kmAdSize_320x50
-                                                           spaceId: @"SPACE_ID"
+                                                           spaceId: @"SPACE_ID" // replace
                                                          partnerId: nil];
     _tosterAdView.useTosterCloseButton = YES;
     

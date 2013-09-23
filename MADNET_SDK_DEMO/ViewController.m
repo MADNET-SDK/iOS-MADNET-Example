@@ -20,6 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    }
+    
 	// Do any additional setup after loading the view, typically from a nib.
     
     _fullscreenAd = [[MADFullscreenViewController alloc] initWithSpaceId: @"150"

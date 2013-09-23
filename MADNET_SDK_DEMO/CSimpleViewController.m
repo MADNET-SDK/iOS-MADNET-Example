@@ -38,7 +38,7 @@
     [super loadView];
     
     _madnetView = [[MADRotationView alloc] initWithAdSize: kmAdSize_320x50
-                                                  spaceId: @"SPACE_ID" // !Replace with your ad-placemenet id! 
+                                                  spaceId: @"SPACE_ID" // !Replace @"SPACE_ID" with your ad-placemenet id! 
                                                 partnerId: nil];
     
     _madnetView.origin = CGPointMake(0.0f, 40.0f);
@@ -53,6 +53,11 @@
 {
     [super viewDidLoad];
     
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    }
+    
 	// Do any additional setup after loading the view.
     
     MADExternalValuesForTargeting *values = [[MADExternalValuesForTargeting alloc] init];
@@ -61,7 +66,7 @@
     [values setValue: [CmAdTargetParameters params].income.from15to24];
     
     values.dob = [NSDate date];
-    values.age = [NSNumber numberWithUnsignedInt: 0];
+    values.age = [NSNumber numberWithUnsignedInt: 18];
     
     [_madnetView loadWithExternalValues: values];
 }

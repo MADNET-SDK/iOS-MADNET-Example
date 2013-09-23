@@ -31,6 +31,11 @@
 {
     [super viewDidLoad];
     
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    }
+    
     _adstep = 5;
     _madnetcells = [[NSMutableArray alloc] init];
 

@@ -24,7 +24,7 @@
     if (self)
     {
         m_madView = [[MADRotationView alloc] initWithAdSize: kmAdSize_320x50];
-        m_madView.spaceId = @"SPACE_ID";
+        m_madView.spaceId = @"SPACE_ID"; // replace
         m_madView.transitionMask = etoAnimationOptionTransitionFlipFromTop;
         m_madViewIsLoaded = NO;
         m_madView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
@@ -38,7 +38,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         m_madView = [[MADRotationView alloc] initWithAdSize: kmAdSize_320x50];
-        m_madView.spaceId = @"SPACE_ID";
+        m_madView.spaceId = @"SPACE_ID"; // replace
         m_madViewIsLoaded = NO;
         m_madView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
         [self addSubview: m_madView];
