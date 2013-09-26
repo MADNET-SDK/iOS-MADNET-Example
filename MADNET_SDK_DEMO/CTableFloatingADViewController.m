@@ -74,7 +74,7 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    [cell.textLabel setText:[NSString stringWithFormat: @"Simple Test Cell %d", indexPath.row]];
+    [cell.textLabel setText:[NSString stringWithFormat: @"Simple Test Cell %ld", (long)indexPath.row]];
     // Configure the cell...
     
     return cell;
