@@ -36,10 +36,9 @@
 - (void) loadView
 {
     [super loadView];
-    
+#warning // !Replace @"SPACE_ID" with your ad-placemenet id!
     _madnetView = [[MADRotationView alloc] initWithAdSize: kmAdSize_320x50
-                                                  spaceId: @"SPACE_ID" // !Replace @"SPACE_ID" with your ad-placemenet id! 
-                                                partnerId: nil];
+                                                  spaceId: @"SPACE_ID"];
     
     _madnetView.origin = CGPointMake(0.0f, 40.0f);
     _madnetView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;

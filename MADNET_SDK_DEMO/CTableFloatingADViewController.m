@@ -40,10 +40,9 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+#warning // !Replace @"SPACE_ID" with your ad-placemenet id!
     _tosterAdView = [[MADTosterRotationView alloc] initWithAdSize: kmAdSize_320x50
-                                                           spaceId: @"SPACE_ID" // replace
-                                                         partnerId: nil];
+                                                           spaceId: @"SPACE_ID"];
     _tosterAdView.useTosterCloseButton = YES;
     
     _tosterAdView.delegate = self;

@@ -27,9 +27,8 @@
     }
     
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    _fullscreenAd = [[MADFullscreenViewController alloc] initWithSpaceId: @"150"
-                                                               partnerId: nil];
+#warning // !Replace @"SPACE_ID" with your ad-placemenet id!    
+    _fullscreenAd = [[MADFullscreenViewController alloc] initWithSpaceId: @"150"];
     _fullscreenAd.delegate = self;
 }
 
