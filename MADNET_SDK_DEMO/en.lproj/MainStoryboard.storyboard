@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gxf-To-azm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gxf-To-azm">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="zrt-de-9Jf">
             <objects>
                 <navigationController definesPresentationContext="YES" id="gxf-To-azm" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="RCj-3l-ZKR">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="RCj-3l-ZKR">
                         <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -30,70 +30,162 @@
         <scene sceneID="5">
             <objects>
                 <viewController title="Simple MADNET App" id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aC3-bq-yxX"/>
+                        <viewControllerLayoutGuide type="bottom" id="tlC-5d-yKT"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4pr-Up-2ks">
-                                <rect key="frame" x="20" y="131" width="280" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ads for UITableViewController">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Rcj-51-0Fa" kind="push" id="IGk-Om-F7s"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l4H-6V-6yV">
-                                <rect key="frame" x="20" y="62" width="280" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Simple Ad Placement">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hTd-1J-Bv6" kind="push" id="loP-sq-Smu"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Simple App with MADNET SDK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mb3-eB-cfD">
-                                <rect key="frame" x="20" y="13" width="280" height="34"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Ai-kb-86Y">
-                                <rect key="frame" x="20" y="417" width="280" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="http://madnet.ru/">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="openMADNETWebSite:" destination="2" eventType="touchUpInside" id="Cpj-dC-2gC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pf1-wx-C8r">
-                                <rect key="frame" x="20" y="198" width="280" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <state key="normal" title="Floating Ads for UITableViewController">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="P08-dl-kso" kind="push" id="fqe-UC-WIO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WEi-ay-Pne">
-                                <rect key="frame" x="20" y="262" width="280" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIz-bw-7WH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fullscreen Ads">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loadFullscreenAd:" destination="2" eventType="touchUpInside" id="4gS-yc-BO7"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pr-Up-2ks">
+                                        <rect key="frame" x="58" y="108" width="205" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Ads for UITableViewController">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Rcj-51-0Fa" kind="push" id="IGk-Om-F7s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4H-6V-6yV">
+                                        <rect key="frame" x="86" y="25" width="148" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Simple Ad Placement">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hTd-1J-Bv6" kind="push" id="loP-sq-Smu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf1-wx-C8r">
+                                        <rect key="frame" x="33" y="191" width="254" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="Floating Ads for UITableViewController">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="P08-dl-kso" kind="push" id="fqe-UC-WIO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEi-ay-Pne">
+                                        <rect key="frame" x="110" y="274" width="101" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Fullscreen Ads">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadFullscreenAd:" destination="2" eventType="touchUpInside" id="4gS-yc-BO7"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0x-2r-YxU">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="E7g-Lh-5MP"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="25" id="FA3-PG-tRl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1b1-ky-bhm">
+                                        <rect key="frame" x="0.0" y="166" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="a9l-ad-mPo"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="vN9-TU-WFq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZM-Wm-qaj">
+                                        <rect key="frame" x="0.0" y="83" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="HoR-jC-vFe"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="43" id="nhA-Hi-dKd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYI-Yz-hOl">
+                                        <rect key="frame" x="0.0" y="249" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="7JW-bh-Tzu"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="bvh-PO-Gd3"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ai-kb-86Y">
+                                        <rect key="frame" x="102" y="357" width="117" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <state key="normal" title="http://madnet.ru/">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openMADNETWebSite:" destination="2" eventType="touchUpInside" id="Cpj-dC-2gC"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zd2-4F-bCK">
+                                        <rect key="frame" x="0.0" y="332" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="2jJ-8c-8oX"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="5Ym-O3-9vW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1b1-ky-bhm" secondAttribute="trailing" id="0UG-bD-Dqi"/>
+                                    <constraint firstAttribute="trailing" secondItem="hYI-Yz-hOl" secondAttribute="trailing" id="0kP-V7-d1A"/>
+                                    <constraint firstItem="1b1-ky-bhm" firstAttribute="leading" secondItem="aIz-bw-7WH" secondAttribute="leading" id="5ZK-Nj-YVM"/>
+                                    <constraint firstItem="Zd2-4F-bCK" firstAttribute="top" secondItem="WEi-ay-Pne" secondAttribute="bottom" id="9fQ-tn-9GF"/>
+                                    <constraint firstItem="pf1-wx-C8r" firstAttribute="top" secondItem="1b1-ky-bhm" secondAttribute="bottom" id="Ehn-ae-Cqm"/>
+                                    <constraint firstAttribute="centerX" secondItem="pf1-wx-C8r" secondAttribute="centerX" id="Igg-rg-2yf"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Ai-kb-86Y" secondAttribute="bottom" id="Kam-L2-Hn7"/>
+                                    <constraint firstItem="4pr-Up-2ks" firstAttribute="height" secondItem="1Ai-kb-86Y" secondAttribute="height" id="Lpy-gU-G7L"/>
+                                    <constraint firstAttribute="centerX" secondItem="1Ai-kb-86Y" secondAttribute="centerX" id="M79-3L-4pb"/>
+                                    <constraint firstItem="o0x-2r-YxU" firstAttribute="top" secondItem="aIz-bw-7WH" secondAttribute="top" id="MTT-pI-tza"/>
+                                    <constraint firstItem="4pr-Up-2ks" firstAttribute="top" secondItem="mZM-Wm-qaj" secondAttribute="bottom" id="Ol0-JL-rLe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zd2-4F-bCK" secondAttribute="trailing" id="OtM-3H-0l5"/>
+                                    <constraint firstItem="l4H-6V-6yV" firstAttribute="top" secondItem="o0x-2r-YxU" secondAttribute="bottom" id="QUo-0e-Eer"/>
+                                    <constraint firstAttribute="centerX" secondItem="l4H-6V-6yV" secondAttribute="centerX" id="R3W-Ae-6MM"/>
+                                    <constraint firstItem="1Ai-kb-86Y" firstAttribute="top" secondItem="Zd2-4F-bCK" secondAttribute="bottom" id="Uey-Vn-LFY"/>
+                                    <constraint firstItem="mZM-Wm-qaj" firstAttribute="top" secondItem="l4H-6V-6yV" secondAttribute="bottom" id="XyQ-kF-NEu"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="416" id="a0C-c2-yxN"/>
+                                    <constraint firstAttribute="centerX" secondItem="WEi-ay-Pne" secondAttribute="centerX" id="bHP-GB-dZj"/>
+                                    <constraint firstItem="1b1-ky-bhm" firstAttribute="top" secondItem="4pr-Up-2ks" secondAttribute="bottom" id="dvY-f2-Zwb"/>
+                                    <constraint firstItem="4pr-Up-2ks" firstAttribute="height" secondItem="pf1-wx-C8r" secondAttribute="height" id="fFL-lq-H80"/>
+                                    <constraint firstAttribute="trailing" secondItem="o0x-2r-YxU" secondAttribute="trailing" id="ft3-3J-vfC"/>
+                                    <constraint firstItem="WEi-ay-Pne" firstAttribute="top" secondItem="hYI-Yz-hOl" secondAttribute="bottom" id="g7a-pI-kGQ"/>
+                                    <constraint firstItem="mZM-Wm-qaj" firstAttribute="leading" secondItem="aIz-bw-7WH" secondAttribute="leading" id="gQu-k4-efH"/>
+                                    <constraint firstItem="hYI-Yz-hOl" firstAttribute="leading" secondItem="aIz-bw-7WH" secondAttribute="leading" id="gZS-MG-d6G"/>
+                                    <constraint firstItem="4pr-Up-2ks" firstAttribute="height" secondItem="l4H-6V-6yV" secondAttribute="height" id="h9W-wb-Nyz"/>
+                                    <constraint firstItem="hYI-Yz-hOl" firstAttribute="height" secondItem="mZM-Wm-qaj" secondAttribute="height" id="hZU-zX-nOz"/>
+                                    <constraint firstItem="o0x-2r-YxU" firstAttribute="leading" secondItem="aIz-bw-7WH" secondAttribute="leading" id="hmZ-5W-hv3"/>
+                                    <constraint firstItem="hYI-Yz-hOl" firstAttribute="height" secondItem="Zd2-4F-bCK" secondAttribute="height" id="n47-YM-Vtn"/>
+                                    <constraint firstItem="Zd2-4F-bCK" firstAttribute="leading" secondItem="aIz-bw-7WH" secondAttribute="leading" id="pHg-ag-stG"/>
+                                    <constraint firstItem="hYI-Yz-hOl" firstAttribute="height" secondItem="1b1-ky-bhm" secondAttribute="height" id="rLz-Se-9Ta"/>
+                                    <constraint firstItem="4pr-Up-2ks" firstAttribute="height" secondItem="WEi-ay-Pne" secondAttribute="height" id="w6d-HL-eVk"/>
+                                    <constraint firstAttribute="trailing" secondItem="mZM-Wm-qaj" secondAttribute="trailing" id="wy3-Kl-1Rh"/>
+                                    <constraint firstAttribute="centerX" secondItem="4pr-Up-2ks" secondAttribute="centerX" id="x5J-Tv-wki"/>
+                                    <constraint firstItem="hYI-Yz-hOl" firstAttribute="top" secondItem="pf1-wx-C8r" secondAttribute="bottom" id="xWZ-l2-VOE"/>
+                                    <constraint firstItem="hYI-Yz-hOl" firstAttribute="height" secondItem="o0x-2r-YxU" secondAttribute="height" id="zD2-bI-RAH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aIz-bw-7WH" secondAttribute="bottom" id="3Tt-dD-yFd"/>
+                            <constraint firstAttribute="trailing" secondItem="aIz-bw-7WH" secondAttribute="trailing" id="I8K-wk-3Y4"/>
+                            <constraint firstItem="aIz-bw-7WH" firstAttribute="top" secondItem="3" secondAttribute="top" id="LOl-JW-5gP"/>
+                            <constraint firstItem="aIz-bw-7WH" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="d05-MX-Zti"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Simple MADNET App" id="GI1-j7-slj"/>
                 </viewController>
@@ -105,11 +197,15 @@
         <scene sceneID="Vi0-CU-D4l">
             <objects>
                 <viewController id="hTd-1J-Bv6" customClass="CSimpleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UM3-gy-397"/>
+                        <viewControllerLayoutGuide type="bottom" id="lYi-g7-6Ur"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nU0-KE-ZN6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rotate ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dsQ-F4-riM">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Rotate ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsQ-F4-riM">
                                 <rect key="frame" x="20" y="145" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -130,12 +226,12 @@
             <objects>
                 <tableViewController title="Ads for UITableViewController" id="Rcj-51-0Fa" customClass="CTableADViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YSX-eu-R3c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="dvO-KL-JcO">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dvO-KL-JcO" id="YrQ-Da-Q5i">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -143,7 +239,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kMADNETCellIdentifier" id="nNc-Ea-OGy" customClass="MADTableViewCell">
-                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nNc-Ea-OGy" id="Eqq-GX-5D0">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -168,12 +264,12 @@
             <objects>
                 <tableViewController id="P08-dl-kso" customClass="CTableFloatingADViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9Ws-Dl-GdR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Nlh-dx-6Hz">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nlh-dx-6Hz" id="5Il-yN-BgJ">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>

@@ -108,10 +108,16 @@
     {
         static NSString *kCellIdentifier = @"Cell";
         cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
-        [cell.textLabel setText:[NSString stringWithFormat: @"Simple Test Cell %ld", (long)indexPath.row]];
+        [cell.textLabel setText:[NSString stringWithFormat: @"Simple Test Cell %d", indexPath.row]];
     }
 
     return cell;
+}
+
+- (BOOL) rotationViewTestingMode: (MADRotationView *)aRotationView
+{
+#warning Return YES value for testing purpose
+    return (TESTMODE);
 }
 
 - (UIViewController *) MADViewController

@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "MADFullscreenViewController.h"
+#import "CMADInterstitialAdManager.h"
 
 @interface ViewController ()<IMADFulscreenViewControllerDelegate>
 {
-    MADFullscreenViewController *_fullscreenAd;
+    CMADInterstitialAdManager *_fullscreenAd;
 }
 @end
 
@@ -25,19 +25,13 @@
     {
         [self setEdgesForExtendedLayout:UIRectEdgeNone];
     }
-    
-	// Do any additional setup after loading the view, typically from a nib.
-#warning // !Replace @"SPACE_ID" with your ad-placemenet id!    
-    _fullscreenAd = [[MADFullscreenViewController alloc] initWithSpaceId: @"150"];
+#warning Replace SPACE_ID with you MADNET placement id
+    _fullscreenAd = [[CMADInterstitialAdManager alloc] initWithSpaceId: SPACE_ID];
     _fullscreenAd.delegate = self;
+    _fullscreenAd.supportRotation = YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+/*
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
 	return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
@@ -57,15 +51,11 @@
 {
 	return UIInterfaceOrientationPortrait;
 }
+*/
 
 -(IBAction) loadFullscreenAd: (id) sender
 {
     [_fullscreenAd load];
-}
-
-- (void) fullscreenMADViewController: (MADFullscreenViewController *) aMADViewController didFailToReceiveAdWithError: (NSError *) aError
-{
-    NSLog(@"%@",aError);
 }
 
 -(IBAction) openMADNETWebSite: (id)sender
@@ -78,4 +68,16 @@
     [_fullscreenAd invalidate]; [_fullscreenAd release];
     [super dealloc];
 }
+
+- (void) fullscreenMADViewControllerDidReceiveAd: (CMADInterstitialAdManager *) aInterstitialAdManager
+{
+    [aInterstitialAdManager presentFullscreenAdFromRootViewController:self];
+}
+
+- (BOOL) fullscreenMADViewTestingMode: (CMADInterstitialAdManager *) aRotationView
+{
+#warning Return YES value for testing purpose
+    return (TESTMODE);
+}
+
 @end

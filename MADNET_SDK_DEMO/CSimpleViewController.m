@@ -33,15 +33,23 @@
     return (self);
 }
 
+- (BOOL) rotationViewTestingMode: (MADRotationView *)aRotationView
+{
+#warning Return YES value for testing purpose
+    return (TESTMODE);
+}
+
 - (void) loadView
 {
     [super loadView];
-#warning // !Replace @"SPACE_ID" with your ad-placemenet id!
+    
+#warning Replace SPACE_ID with you MADNET placement id
     _madnetView = [[MADRotationView alloc] initWithAdSize: kmAdSize_320x50
-                                                  spaceId: @"SPACE_ID"];
+                                                  spaceId: SPACE_ID];
     
     _madnetView.origin = CGPointMake(0.0f, 40.0f);
     _madnetView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    [_madnetView setTranslatesAutoresizingMaskIntoConstraints:NO];
     _madnetView.transitionMask = etoAnimationOptionTransitionFlipFromLeft | etoAnimationOptionTransitionRevealFromBottom;
     
     _madnetView.delegate = self;
@@ -60,9 +68,9 @@
 	// Do any additional setup after loading the view.
     
     MADExternalValuesForTargeting *values = [[MADExternalValuesForTargeting alloc] init];
-    [values setValue: [CmAdTargetParameters params].gender.male];
-    [values setValue: [CmAdTargetParameters params].education.university];
-    [values setValue: [CmAdTargetParameters params].income.from15to24];
+    [values setValue: [CMADTargetParameters params].gender.male];
+    [values setValue: [CMADTargetParameters params].education.university];
+    [values setValue: [CMADTargetParameters params].income.from15to24];
     
     values.dob = [NSDate date];
     values.age = [NSNumber numberWithUnsignedInt: 18];

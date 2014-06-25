@@ -40,9 +40,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-#warning // !Replace @"SPACE_ID" with your ad-placemenet id!
+    
+#warning Replace SPACE_ID with you MADNET placement id
     _tosterAdView = [[MADTosterRotationView alloc] initWithAdSize: kmAdSize_320x50
-                                                           spaceId: @"SPACE_ID"];
+                                                           spaceId: SPACE_ID];
     _tosterAdView.useTosterCloseButton = YES;
     
     _tosterAdView.delegate = self;
@@ -73,7 +74,7 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    [cell.textLabel setText:[NSString stringWithFormat: @"Simple Test Cell %ld", (long)indexPath.row]];
+    [cell.textLabel setText:[NSString stringWithFormat: @"Simple Test Cell %d", indexPath.row]];
     // Configure the cell...
     
     return cell;
@@ -82,17 +83,9 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    /*MADExternalValuesForTargeting *values = [[[MADExternalValuesForTargeting alloc] init] autorelease];
-     values.age = @676767676;
-     values.dob = [NSDate date];
-     values.zip = @"94402";*/
-    //[values setValue: [CmAdTargetParameters params].gender.male];
-    
-    
     [_tosterAdView load];
     return ([MADTosterRotationView footerViewForTableView: tableView
                                          withRotationView: _tosterAdView]);
-    // return (_tosterAdView);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -116,6 +109,12 @@
 - (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     [_tosterAdView playAndShow];
+}
+
+- (BOOL) rotationViewTestingMode: (MADRotationView *)aRotationView
+{
+#warning Return YES value for testing purpose
+    return (TESTMODE);
 }
 
 - (UIViewController *) MADViewController
