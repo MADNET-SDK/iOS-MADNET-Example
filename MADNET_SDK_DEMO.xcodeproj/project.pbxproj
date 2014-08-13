@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC0DC3701958739D00CEC335 /* libMADSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0DC3661958739D00CEC335 /* libMADSDK.a */; };
-		EC0DC3711958739D00CEC335 /* MADNET_SDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EC0DC36A1958739D00CEC335 /* MADNET_SDK.bundle */; };
 		EC169E86179ED23B001824C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169E85179ED23B001824C7 /* UIKit.framework */; };
 		EC169E88179ED23B001824C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169E87179ED23B001824C7 /* Foundation.framework */; };
 		EC169E8A179ED23B001824C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169E89179ED23B001824C7 /* CoreGraphics.framework */; };
@@ -35,25 +33,13 @@
 		EC169EE8179EDCF6001824C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EE7179EDCF6001824C7 /* SystemConfiguration.framework */; };
 		EC169EEA179EDCFC001824C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC169EE9179EDCFC001824C7 /* MobileCoreServices.framework */; };
 		EC807BCA17F07C3500B66CDE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC807BC917F07C3500B66CDE /* Security.framework */; };
+		EC94109E199B5B7F00EB944C /* libMADSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC941094199B5B7E00EB944C /* libMADSDK.a */; };
+		EC94109F199B5B7F00EB944C /* MADNET_SDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EC941098199B5B7E00EB944C /* MADNET_SDK.bundle */; };
 		ECA164EB179FE73700DB2552 /* MADTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA164EA179FE3FD00DB2552 /* MADTableViewCell.m */; };
 		ECA164EE179FEF1900DB2552 /* CTableFloatingADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA164ED179FEF1900DB2552 /* CTableFloatingADViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EC0DC3611958739D00CEC335 /* CMADInterstitialAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMADInterstitialAdManager.h; sourceTree = "<group>"; };
-		EC0DC3621958739D00CEC335 /* IMADBaseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADBaseProtocol.h; sourceTree = "<group>"; };
-		EC0DC3631958739D00CEC335 /* IMADFulscreenViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADFulscreenViewControllerDelegate.h; sourceTree = "<group>"; };
-		EC0DC3641958739D00CEC335 /* IMADRotationViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADRotationViewDelegate.h; sourceTree = "<group>"; };
-		EC0DC3651958739D00CEC335 /* IMADTosterRotationViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADTosterRotationViewDelegate.h; sourceTree = "<group>"; };
-		EC0DC3661958739D00CEC335 /* libMADSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMADSDK.a; sourceTree = "<group>"; };
-		EC0DC3671958739D00CEC335 /* MADBaseRequestParametrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADBaseRequestParametrs.h; sourceTree = "<group>"; };
-		EC0DC3691958739D00CEC335 /* MADExternalValuesForTargeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADExternalValuesForTargeting.h; sourceTree = "<group>"; };
-		EC0DC36A1958739D00CEC335 /* MADNET_SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MADNET_SDK.bundle; sourceTree = "<group>"; };
-		EC0DC36B1958739D00CEC335 /* MadNetStyleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MadNetStyleConfig.h; sourceTree = "<group>"; };
-		EC0DC36C1958739D00CEC335 /* MADRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADRotationView.h; sourceTree = "<group>"; };
-		EC0DC36D1958739D00CEC335 /* MADSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADSize.h; sourceTree = "<group>"; };
-		EC0DC36E1958739D00CEC335 /* MADTosterFooterRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADTosterFooterRotationView.h; sourceTree = "<group>"; };
-		EC0DC36F1958739D00CEC335 /* MADTosterRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADTosterRotationView.h; sourceTree = "<group>"; };
 		EC169E82179ED23B001824C7 /* MADNET_SDK_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADNET_SDK_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC169E85179ED23B001824C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC169E87179ED23B001824C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +73,23 @@
 		EC169EE7179EDCF6001824C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EC169EE9179EDCFC001824C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		EC807BC917F07C3500B66CDE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EC94108D199B5B7E00EB944C /* CMADADSourceBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMADADSourceBuilder.h; sourceTree = "<group>"; };
+		EC94108E199B5B7E00EB944C /* CmAdBannerEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmAdBannerEntity.h; sourceTree = "<group>"; };
+		EC94108F199B5B7E00EB944C /* CMADInterstitialAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMADInterstitialAdManager.h; sourceTree = "<group>"; };
+		EC941090199B5B7E00EB944C /* IMADBaseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADBaseProtocol.h; sourceTree = "<group>"; };
+		EC941091199B5B7E00EB944C /* IMADFulscreenViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADFulscreenViewControllerDelegate.h; sourceTree = "<group>"; };
+		EC941092199B5B7E00EB944C /* IMADRotationViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADRotationViewDelegate.h; sourceTree = "<group>"; };
+		EC941093199B5B7E00EB944C /* IMADTosterRotationViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMADTosterRotationViewDelegate.h; sourceTree = "<group>"; };
+		EC941094199B5B7E00EB944C /* libMADSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMADSDK.a; sourceTree = "<group>"; };
+		EC941095199B5B7E00EB944C /* MADBaseRequestParametrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADBaseRequestParametrs.h; sourceTree = "<group>"; };
+		EC941096199B5B7E00EB944C /* MADContainerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADContainerParameters.h; sourceTree = "<group>"; };
+		EC941097199B5B7E00EB944C /* MADExternalValuesForTargeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADExternalValuesForTargeting.h; sourceTree = "<group>"; };
+		EC941098199B5B7E00EB944C /* MADNET_SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MADNET_SDK.bundle; sourceTree = "<group>"; };
+		EC941099199B5B7E00EB944C /* MadNetStyleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MadNetStyleConfig.h; sourceTree = "<group>"; };
+		EC94109A199B5B7E00EB944C /* MADRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADRotationView.h; sourceTree = "<group>"; };
+		EC94109B199B5B7F00EB944C /* MADSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADSize.h; sourceTree = "<group>"; };
+		EC94109C199B5B7F00EB944C /* MADTosterFooterRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADTosterFooterRotationView.h; sourceTree = "<group>"; };
+		EC94109D199B5B7F00EB944C /* MADTosterRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADTosterRotationView.h; sourceTree = "<group>"; };
 		ECA164E9179FE3FD00DB2552 /* MADTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADTableViewCell.h; sourceTree = "<group>"; };
 		ECA164EA179FE3FD00DB2552 /* MADTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADTableViewCell.m; sourceTree = "<group>"; };
 		ECA164EC179FEF1900DB2552 /* CTableFloatingADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTableFloatingADViewController.h; sourceTree = "<group>"; };
@@ -108,7 +111,7 @@
 				EC169EDE179EDC4C001824C7 /* CoreMotion.framework in Frameworks */,
 				EC169EDC179EDC45001824C7 /* CoreLocation.framework in Frameworks */,
 				EC169ED4179EDC1F001824C7 /* CoreFoundation.framework in Frameworks */,
-				EC0DC3701958739D00CEC335 /* libMADSDK.a in Frameworks */,
+				EC94109E199B5B7F00EB944C /* libMADSDK.a in Frameworks */,
 				EC169EDA179EDC37001824C7 /* MediaPlayer.framework in Frameworks */,
 				EC169ED8179EDC2E001824C7 /* libz.dylib in Frameworks */,
 				EC169ED6179EDC25001824C7 /* QuartzCore.framework in Frameworks */,
@@ -121,27 +124,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC0DC35E1958739D00CEC335 /* MADNET_SDK_LIB_5022_151 */ = {
-			isa = PBXGroup;
-			children = (
-				EC0DC3611958739D00CEC335 /* CMADInterstitialAdManager.h */,
-				EC0DC3621958739D00CEC335 /* IMADBaseProtocol.h */,
-				EC0DC3631958739D00CEC335 /* IMADFulscreenViewControllerDelegate.h */,
-				EC0DC3641958739D00CEC335 /* IMADRotationViewDelegate.h */,
-				EC0DC3651958739D00CEC335 /* IMADTosterRotationViewDelegate.h */,
-				EC0DC3661958739D00CEC335 /* libMADSDK.a */,
-				EC0DC3671958739D00CEC335 /* MADBaseRequestParametrs.h */,
-				EC0DC3691958739D00CEC335 /* MADExternalValuesForTargeting.h */,
-				EC0DC36A1958739D00CEC335 /* MADNET_SDK.bundle */,
-				EC0DC36B1958739D00CEC335 /* MadNetStyleConfig.h */,
-				EC0DC36C1958739D00CEC335 /* MADRotationView.h */,
-				EC0DC36D1958739D00CEC335 /* MADSize.h */,
-				EC0DC36E1958739D00CEC335 /* MADTosterFooterRotationView.h */,
-				EC0DC36F1958739D00CEC335 /* MADTosterRotationView.h */,
-			);
-			path = MADNET_SDK_LIB_5022_151;
-			sourceTree = "<group>";
-		};
 		EC169E79179ED23B001824C7 = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +167,7 @@
 		EC169E8B179ED23B001824C7 /* MADNET_SDK_DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				EC0DC35E1958739D00CEC335 /* MADNET_SDK_LIB_5022_151 */,
+				EC94108C199B5B7E00EB944C /* MADNET_SDK_LIB_5022_155 */,
 				EC169E94179ED23B001824C7 /* AppDelegate.h */,
 				EC169E95179ED23B001824C7 /* AppDelegate.m */,
 				EC169E9D179ED23B001824C7 /* MainStoryboard.storyboard */,
@@ -216,6 +198,30 @@
 				EC169E9B179ED23B001824C7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC94108C199B5B7E00EB944C /* MADNET_SDK_LIB_5022_155 */ = {
+			isa = PBXGroup;
+			children = (
+				EC94108D199B5B7E00EB944C /* CMADADSourceBuilder.h */,
+				EC94108E199B5B7E00EB944C /* CmAdBannerEntity.h */,
+				EC94108F199B5B7E00EB944C /* CMADInterstitialAdManager.h */,
+				EC941090199B5B7E00EB944C /* IMADBaseProtocol.h */,
+				EC941091199B5B7E00EB944C /* IMADFulscreenViewControllerDelegate.h */,
+				EC941092199B5B7E00EB944C /* IMADRotationViewDelegate.h */,
+				EC941093199B5B7E00EB944C /* IMADTosterRotationViewDelegate.h */,
+				EC941094199B5B7E00EB944C /* libMADSDK.a */,
+				EC941095199B5B7E00EB944C /* MADBaseRequestParametrs.h */,
+				EC941096199B5B7E00EB944C /* MADContainerParameters.h */,
+				EC941097199B5B7E00EB944C /* MADExternalValuesForTargeting.h */,
+				EC941098199B5B7E00EB944C /* MADNET_SDK.bundle */,
+				EC941099199B5B7E00EB944C /* MadNetStyleConfig.h */,
+				EC94109A199B5B7E00EB944C /* MADRotationView.h */,
+				EC94109B199B5B7F00EB944C /* MADSize.h */,
+				EC94109C199B5B7F00EB944C /* MADTosterFooterRotationView.h */,
+				EC94109D199B5B7F00EB944C /* MADTosterRotationView.h */,
+			);
+			path = MADNET_SDK_LIB_5022_155;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC169E90179ED23B001824C7 /* InfoPlist.strings in Resources */,
-				EC0DC3711958739D00CEC335 /* MADNET_SDK.bundle in Resources */,
+				EC94109F199B5B7F00EB944C /* MADNET_SDK.bundle in Resources */,
 				EC169E98179ED23B001824C7 /* Default.png in Resources */,
 				EC169E9A179ED23B001824C7 /* Default@2x.png in Resources */,
 				EC169E9C179ED23B001824C7 /* Default-568h@2x.png in Resources */,
@@ -392,6 +398,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MADNET_SDK_DEMO/MADNET_SDK_LIB_5022_151",
+					"$(PROJECT_DIR)/MADNET_SDK_DEMO/MADNET_SDK_LIB_5022_155",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				OTHER_TEST_FLAGS = "-ObjC";
@@ -414,6 +421,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MADNET_SDK_DEMO/MADNET_SDK_LIB_5022_151",
+					"$(PROJECT_DIR)/MADNET_SDK_DEMO/MADNET_SDK_LIB_5022_155",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				OTHER_TEST_FLAGS = "-ObjC";
