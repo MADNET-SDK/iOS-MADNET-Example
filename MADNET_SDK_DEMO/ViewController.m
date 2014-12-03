@@ -31,28 +31,6 @@
     _fullscreenAd.supportRotation = YES;
 }
 
-/*
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
-	return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (BOOL) shouldAutorotate
-{
-    return NO;
-}
-
--(NSUInteger)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-{
-	return UIInterfaceOrientationPortrait;
-}
-*/
-
 -(IBAction) loadFullscreenAd: (id) sender
 {
     [_fullscreenAd load];
